@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>hbaseweb</display-name>
+  <welcome-file-list>
+    <welcome-file>main.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+  	<servlet-name>findServlet</servlet-name>
+  	<servlet-class>servlet.FindServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>insertServlet</servlet-name>
+  	<servlet-class>servlet.InsertServlet</servlet-class>
+  </servlet>
+   <servlet>
+  	<servlet-name>deleteServlet</servlet-name>
+  	<servlet-class>servlet.DeleteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>findServlet</servlet-name>
+  	<url-pattern>/findServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>insertServlet</servlet-name>
+  	<url-pattern>/insertServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>deleteServlet</servlet-name>
+  	<url-pattern>/deleteServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
